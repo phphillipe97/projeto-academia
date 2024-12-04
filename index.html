@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-WORKS - Treinos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>E-WORKS</h1>
+            </div>
+            <ul>
+                <li onclick="showContent('peitos')">TREINO PEITOS</li>
+                <li onclick="showContent('costas')">TREINO COSTAS</li>
+                <li onclick="showContent('pernas')">TREINO PERNAS</li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo -->
+        <div class="content">
+            <div id="peitos" class="treino-content">
+                <h2>Treino de Peitos</h2>
+                <ul class="exercicio-list">
+                    <!-- Exemplo de Exercício 1 -->
+                    <li>
+                        <input type="checkbox" id="peito1">
+                        <label for="peito1">
+                            <img src="img/supino.jpg" alt="Supino reto" class="exercicio-img">
+                            <div>
+                                <strong>Supino reto com barra</strong>
+                                <p>3 séries de 8-12 repetições</p>
+                                <p>Deite-se no banco, segure a barra com as mãos na largura dos ombros e abaixe a barra até o peito. Empurre de volta.</p>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Adicione os outros 9 exercícios aqui -->
+                    <li>
+                        <input type="checkbox" id="peito2">
+                        <label for="peito2">
+                            <img src="img/peitoral.jpg" alt="Peitoral" class="exercicio-img">
+                            <div>
+                                <strong>Fly no peitoral</strong>
+                                <p>3 séries de 10-15 repetições</p>
+                                <p>Com halteres, abra os braços até a linha do peito, contraindo os músculos do peitoral ao retornar.</p>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Outros 8 exercícios -->
+                </ul>
+            </div>
+
+            <div id="costas" class="treino-content">
+                <h2>Treino de Costas</h2>
+                <ul class="exercicio-list">
+                    <!-- Exemplo de Exercício 1 -->
+                    <li>
+                        <input type="checkbox" id="costas1">
+                        <label for="costas1">
+                            <img src="img/barrafixa.jpg" alt="Barra Fixa" class="exercicio-img">
+                            <div>
+                                <strong>Puxada na barra fixa</strong>
+                                <p>4 séries de 6-10 repetições</p>
+                                <p>Segure a barra fixa com as palmas das mãos para fora. Puxe seu corpo para cima até o queixo ultrapassar a barra e desça controladamente.</p>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Adicione os outros 9 exercícios aqui -->
+                    <li>
+                        <input type="checkbox" id="costas2">
+                        <label for="costas2">
+                            <img src="img/remo.jpg" alt="Remada Unilateral" class="exercicio-img">
+                            <div>
+                                <strong>Remada unilateral</strong>
+                                <p>3 séries de 8-12 repetições</p>
+                                <p>Com um haltere, puxe o peso em direção ao quadril, mantendo o tronco reto e o movimento controlado.</p>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Outros 8 exercícios -->
+                </ul>
+            </div>
+
+            <div id="pernas" class="treino-content">
+                <h2>Treino de Pernas</h2>
+                <ul class="exercicio-list">
+                    <!-- Exemplo de Exercício 1 -->
+                    <li>
+                        <input type="checkbox" id="perna1">
+                        <label for="perna1">
+                            <img src="img/agachamento.jpg" alt="Agachamento Livre" class="exercicio-img">
+                            <div>
+                                <strong>Agachamento livre</strong>
+                                <p>4 séries de 10-15 repetições</p>
+                                <p>Mantenha os pés na largura dos ombros, dobre os joelhos mantendo as costas retas, e desça até os quadris estarem paralelos ao chão.</p>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Adicione os outros 9 exercícios aqui -->
+                    <li>
+                        <input type="checkbox" id="perna2">
+                        <label for="perna2">
+                            <img src="img/legpress.jpg" alt="Leg Press" class="exercicio-img">
+                            <div>
+                                <strong>Leg Press</strong>
+                                <p>4 séries de 12-15 repetições</p>
+                                <p>Com os pés na plataforma, empurre o peso para cima estendendo as pernas. Retorne controladamente à posição inicial.</p>
+                            </div>
+                        </label>
+                    </li>
+                    <!-- Outros 8 exercícios -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
