@@ -29,6 +29,7 @@ body {
     padding-top: 30px;
     position: fixed;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
 }
 
 /* Logo */
@@ -83,19 +84,58 @@ body {
     margin-left: 250px;
     padding: 40px;
     flex-grow: 1;
-    transition: margin-left 0.3s;
+    transition: margin-left 0.3s ease;
 }
 
-.treino-content {
-    display: none;
-    transition: opacity 0.5s ease-in-out;
+/* Estilo de conteúdo para telas menores */
+@media screen and (max-width: 768px) {
+    /* Menu lateral ajustado para telas pequenas */
+    .sidebar {
+        width: 200px; /* Diminuir o tamanho do menu */
+    }
+
+    /* Ajustando a margem do conteúdo */
+    .content {
+        margin-left: 200px; /* Ajuste do conteúdo quando o menu é menor */
+    }
 }
 
-.treino-content h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 480px) {
+    /* Menu lateral ajustado para telas muito pequenas */
+    .sidebar {
+        width: 100%;  /* Menu ocupa toda a largura */
+        position: absolute;
+        height: auto;
+        box-shadow: none;
+    }
+
+    /* Ajustando a margem do conteúdo */
+    .content {
+        margin-left: 0; /* Conteúdo não precisa de margem */
+        padding: 20px; /* Menos espaço no conteúdo */
+    }
+
+    /* Logo do menu */
+    .sidebar .logo {
+        margin-bottom: 30px;
+    }
+
+    .sidebar h1 {
+        font-size: 28px; /* Reduzindo o tamanho da fonte para a logo */
+    }
+
+    /* Lista do menu para telas pequenas */
+    .sidebar ul li {
+        font-size: 16px; /* Fontes menores no menu */
+        padding: 12px; /* Menos espaço entre os itens */
+    }
+
+    /* Opcional: Deixar o menu visível ou escondido com um botão */
+    /* Caso precise de um botão para abrir e fechar o menu */
+    /* .sidebar {
+        display: none;  / * Controlar com JS */
+    } */
 
 /* Estilo da lista de exercícios */
 .exercicio-list {
