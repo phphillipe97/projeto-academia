@@ -29,7 +29,6 @@ body {
     padding-top: 30px;
     position: fixed;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s ease;
 }
 
 /* Logo */
@@ -81,55 +80,21 @@ body {
 
 /* Estilo do conteúdo */
 .content {
-    margin-left: 250px; /* Garante que o conteúdo começa após o menu lateral */
+    margin-left: 250px;
     padding: 40px;
     flex-grow: 1;
-    transition: margin-left 0.3s ease;
+    transition: margin-left 0.3s;
 }
 
-/* Estilo para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    /* Menu lateral ajustado para telas pequenas */
-    .sidebar {
-        width: 200px; /* Diminuir o tamanho do menu */
-    }
-
-    /* Ajustando a margem do conteúdo */
-    .content {
-        margin-left: 200px; /* Ajuste do conteúdo quando o menu é menor */
-    }
+.treino-content {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* Estilo para dispositivos móveis muito pequenos */
-@media screen and (max-width: 480px) {
-    /* Menu lateral ajustado para telas muito pequenas */
-    .sidebar {
-        width: 100%; /* Menu ocupa toda a largura */
-        position: absolute;
-        height: auto;
-        box-shadow: none;
-    }
-
-    /* Ajustando a margem do conteúdo */
-    .content {
-        margin-left: 0; /* Removendo a margem esquerda quando o menu ocupa toda a tela */
-        padding: 20px; /* Menos espaço no conteúdo */
-    }
-
-    /* Logo do menu */
-    .sidebar .logo {
-        margin-bottom: 30px;
-    }
-
-    .sidebar h1 {
-        font-size: 28px; /* Reduzindo o tamanho da fonte para a logo */
-    }
-
-    /* Lista do menu para telas pequenas */
-    .sidebar ul li {
-        font-size: 16px; /* Fontes menores no menu */
-        padding: 12px; /* Menos espaço entre os itens */
-    }
+.treino-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
 /* Estilo da lista de exercícios */
